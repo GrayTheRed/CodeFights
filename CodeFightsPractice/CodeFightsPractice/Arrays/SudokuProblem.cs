@@ -3,12 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     class SudokuProblem
     {
         public int GridLength { get; set; }
+
         public SudokuProblem()
         {
             char[][] grid = new char[][]
@@ -28,6 +27,7 @@
             Console.WriteLine(isSudoku);
             Console.ReadKey();
         }
+
         public bool IsSudoku(char[][] grid)
         {
             if ((!AllColumns(grid)) || (!AllRows(grid)))
@@ -74,16 +74,20 @@
             }
             return true;
         }
+
         public bool NineByNine(char[][] grid)
         {
-            int stoppingPoint = GridLength - 3;
+            var stoppingPoint = GridLength - 3;
             for (int i = 0; i <= stoppingPoint; i += 3)
             {
                 for (int j = 0; j <= stoppingPoint; j += 3)
                 {
-                    List<char> charList = new List<char> { grid[i][j], grid[i + 1][j], grid[i + 2][j],
-                    grid[i][j+1], grid[i + 1][j+1], grid[i + 2][j+1],
-                    grid[i][j+2], grid[i+1][j+2], grid[i+2][j+2] };
+                    var charList = new List<char>
+                    {
+                        grid[i][j], grid[i + 1][j], grid[i + 2][j],
+                        grid[i][j+1], grid[i + 1][j+1], grid[i + 2][j+1],
+                        grid[i][j+2], grid[i+1][j+2], grid[i+2][j+2]
+                    };
                     if (!CheckForDuplicates(charList))
                     {
                         return false;
@@ -92,9 +96,10 @@
             }
             return true;
         }
+
         public bool CheckForDuplicates(List<char> charList)
         {
-            List<char> numbers = new List<char>();
+            var numbers = new List<char>();
             foreach(var item in charList)
             {
                 switch (item)
@@ -106,7 +111,6 @@
                         break;
                 }
             }
-
             var distCount = numbers.Distinct();
             if (distCount.Count() != numbers.Count)
             {
