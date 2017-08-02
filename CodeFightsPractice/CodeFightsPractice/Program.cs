@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CodeFightsPractice
+﻿namespace CodeFightsPractice
 {
+    using Arrays;
+
     class Program
     {
         static void Main(string[] args)
         {
+            var sudoku = new SudokuProblem();
         }
     }
 }
