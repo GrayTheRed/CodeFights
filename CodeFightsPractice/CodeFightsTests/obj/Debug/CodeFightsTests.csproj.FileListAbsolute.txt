@@ -1,0 +1,7 @@
+D:\GitRepo\CodeFights\CodeFightsPractice\CodeFightsTests\bin\Debug\CodeFightsTests.dll
+D:\GitRepo\CodeFights\CodeFightsPractice\CodeFightsTests\bin\Debug\CodeFightsTests.pdb
+D:\GitRepo\CodeFights\CodeFightsPractice\CodeFightsTests\bin\Debug\CodeFightsPractice.exe
+D:\GitRepo\CodeFights\CodeFightsPractice\CodeFightsTests\bin\Debug\CodeFightsPractice.pdb
+D:\GitRepo\CodeFights\CodeFightsPractice\CodeFightsTests\obj\Debug\CodeFightsTests.csprojResolveAssemblyReference.cache
+D:\GitRepo\CodeFights\CodeFightsPractice\CodeFightsTests\obj\Debug\CodeFightsTests.dll
+D:\GitRepo\CodeFights\CodeFightsPractice\CodeFightsTests\obj\Debug\CodeFightsTests.pdb
