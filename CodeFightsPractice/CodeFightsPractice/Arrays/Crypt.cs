@@ -6,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace CodeFightsPractice.Arrays
 {
-    class Crypt
+    public class Crypt
     {
        
         public Crypt()
         {
-            //var crypt = new string[] { "SEND", "MORE", "MONEY" };
-            //var solution = new char[][]
-            //{
-            //    new char[] {'O', '0' },
-            //    new char[] {'M', '1' },
-            //    new char[] {'Y', '2' },
-            //    new char[] {'E', '5' },
-            //    new char[] {'N', '6' },
-            //    new char[] {'D', '7' },
-            //    new char[] {'R', '8' },
-            //    new char[] {'S', '9' }
-            //};
-            var crypt = new string[] { "AA", "AA", "AA" };
+            var crypt = new string[] { "SEND", "MORE", "MONEY" };
             var solution = new char[][]
             {
-                new char[] {'A', '0'}
+                new char[] {'O', '0' },
+                new char[] {'M', '1' },
+                new char[] {'Y', '2' },
+                new char[] {'E', '5' },
+                new char[] {'N', '6' },
+                new char[] {'D', '7' },
+                new char[] {'R', '8' },
+                new char[] {'S', '9' }
             };
+            //var crypt = new string[] { "AA", "AA", "AA" };
+            //var solution = new char[][]
+            //{
+            //    new char[] {'A', '0'}
+            //};
 
-            Console.WriteLine(IsCrypt(crypt, solution));
-            Console.ReadKey();
+            //Console.WriteLine(IsCrypt(crypt, solution));
+            //Console.ReadKey();
         }
 
         public bool IsCrypt(string[] crypt, char[][] solution)
